@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22.11.0"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Server-only secrets (SUPABASE_SERVICE_ROLE_KEY, AI provider keys) must be set
+# in the Netlify UI (Site configuration -> Environment variables) with scope
+# "Functions"/"Build" only — never prefixed with NEXT_PUBLIC_, or they will be
+# bundled into client-side JavaScript and exposed to every visitor.

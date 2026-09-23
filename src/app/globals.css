@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+html, body {
+  background: #0A0E14;
+  color: #E4E8EE;
+}
